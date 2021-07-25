@@ -2,7 +2,7 @@ PKG openjdk15 bash
 
 CMD fetch https://artifacts.opensearch.org/releases/bundle/opensearch/1.0.0/opensearch-1.0.0-linux-x64.tar.gz -o /root/os100.tgz
 CMD tar xvzf /root/os100.tgz
-CMD fetch http://hackacad.net/static/os-freebsd_0.1a.patch -o /root/os-freebsd_0.1a.patch
+CMD fetch https://hackacad.net/static/os-freebsd_0.1a.patch -o /root/os-freebsd_0.1a.patch
 CMD cd /root && patch -p0 -tRi os-freebsd_0.1a.patch
 CMD echo "Please run"
 CMD echo "setenv JAVA_HOME /usr/local/"
